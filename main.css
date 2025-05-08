@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#bento-container{
+    background-color: rgba(255, 255, 255, 0.589);
+    box-sizing: border-box;
+    width: 800px;
+  margin: 0 auto;
+  
+  display: grid;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: 200px 400px 200px;
+  grid-template-areas: 
+  'first second third'
+  'first second third'
+  'first fourth fourth'
+  ;
+  gap: 10px;
+    
+}
+
+.first{
+
+    grid-area: first;
+}
+.first-inner{
+    display: grid;
+    grid-template-rows: 300px 300px;
+    gap: 20px;
+}
+.first-inner1{
+    background-color: hsl(31, 66%, 93%);
+     font-family: "DM Sans";
+     font-style: oblique;
+     text-align: center;
+     font-size: 2rem;
+
+}
+.first-inner1-span{
+    color: hsl(256, 67%, 59%);
+}
+.first-inner2{
+    background-color: hsl(39, 100%, 71%);
+    font-family: "DM Sans";
+     font-style: oblique;
+     font-size: 2rem;
+}
+.first-inner2 > img{
+   display: block;
+   margin: auto;
+}
+.second{
+    grid-area: second;
+
+}
+.second-inner{
+
+    display: grid;
+    height: 100%;
+    grid-template-rows: 49% 49%;
+    gap: 2%;
+    
+}
+.second-inner1{
+    background-color: hsl(256, 67%, 59%);
+    text-align: center;
+    color: aliceblue;
+    
+}
+.second-inner1 > img{
+   width: 150px;
+   margin: auto;
+}
+.sm{
+    font-family: "DM Sans";
+    font-size: 2.5rem;
+    text-align: center;
+    font-style: oblique;
+
+}
+.sm span{
+    color: burlywood;
+
+}
+.second-inner1 > img{
+    display: block;
+}
+
+.second-inner2-div{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+}
+.second-inner2-div1{
+    background-color: rgb(255, 255, 255);
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+}
+.second-inner2-div2{
+    background-color: hsl(39, 100%, 71%);
+    font-family: "DM Sans";
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+.second-inner2-div2 p{
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.second-inner2-div2 img{
+   width: 100%;
+}
+
+.third{
+    background-color: hsl(254, 88%, 90%);
+    grid-area: third;
+    padding-top: 20px;
+    font-family: "DM Sans";
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.optimize{
+    font-weight: 400;
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+.fourth{
+    
+    grid-area: fourth;
+}
+.fourth-inner{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 29% 69%;
+    gap: 2%;
+}
+.fourth-inner1{
+    background-color: rgb(255, 255, 255);
+   
+    
+}
+.fourth-inner2{
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+}
+.fourth-inner2 p{
+    padding-top: 50px;
+    font-weight: bold;
+}
+.fourth-inner1-p{
+    font-family: "DM Sans";
+    font-size: rem;
+    font-weight: bold;
+    
+    
+
+}
+.fourth-inner1-p2{
+    padding-bottom: 30px;
+}
